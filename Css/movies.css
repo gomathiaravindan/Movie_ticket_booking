@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.bg ul{
+	background:linear-gradient(to right,blue,cyan);
+	position:-webkit-sticky;
+    position:sticky;
+    width:100%;
+    top:0;
+}
+
+li{
+	list-style:none;
+	padding:15px 32px;
+	display:inline-block;
+}
+li a{
+	text-decoration:none;
+	color:white;
+	font-size:22px;
+	font-weight:bolder;
+	font-family:Times Roman;
+	font-style:italic;
+	position:relative;
+}
+
+li a.bottom:before{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:0;
+	bottom:0;
+	left:0;
+	background-color:#FFF;
+	visibility:hidden;
+	transition:all 0.3s ease-in-out;
+}
+li a.bottom:hover:before{
+	color:white;
+	text-decoration:none;
+	visibility:visible;
+	height:3px;
+}
+
